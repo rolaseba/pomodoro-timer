@@ -1,6 +1,15 @@
 # Pomodoro Timer Application
 
-This is a Pomodoro timer application that helps manage work and break intervals based on the Pomodoro Technique. The application reads configuration settings from a JSON file, displays ASCII art, and plays audio notifications for work and break periods.
+```ascii
+   ,--./,-.
+ / #      \\ 
+|          |  
+ \\        /   
+  `._,._,'
+```
+
+This is a **Pomodoro timer** application that helps manage work and break intervals based on the Pomodoro Technique, avoinding the *burnout*.
+The application reads configuration settings from a JSON file, displays ASCII art, and plays audio notifications for work and break periods.
 
 **Pomodoro Technique** is a time management method that involves breaking work into intervals, typically 25 minutes long, followed by short breaks. After completing a set number of Pomodoros (work intervals), you take a longer break. Once the long break is taken, the Pomodoros count resets to zero, and a basket count increments by one. This basket feature is my custom addition to track completed cycles of Pomodoros.
 
@@ -41,19 +50,19 @@ This is a Pomodoro timer application that helps manage work and break intervals 
 
 ## Configuration
 
-Create a `config.json` file in the project directory with the following structure:
+Modify the `config.json` file in the project directory with the following structure:
 
 ```json
 {
     "work_duration": 25,
     "short_break_duration": 5,
     "long_break_duration": 15,
-    "pomodoros_before_long_break": 4,
-    "text_for_long_break": "Take a Long Break!",
+    "pomodoros_before_long_break": 3,
+    "text_for_long_break": "Long break... go !!",
     "audio_notification": true,
-    "audio_file_work": "start_work.mp3",
-    "audio_file_break": "start_break.mp3",
-    "audio_file_long_break": "start_long_break.mp3"
+    "audio_file_work": "audios/alarm-work.mp3",
+    "audio_file_break": "audios/alarm-break.wav",
+    "audio_file_long_break": "audios/alarm-long-break.mp3"
 }
 ```
 
