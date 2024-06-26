@@ -1,0 +1,11 @@
+{
+    "work_duration": 1,
+    "short_break_duration": 1,
+    "long_break_duration": 2,
+    "pomodoros_before_long_break": 3,
+    "text_for_long_break": "Long break... go !!",
+    "audio_notification": true,
+    "audio_file_work": "audios/alarm-work.mp3",
+    "audio_file_break": "audios/alarm-break.wav",
+    "audio_file_long_break": "audios/alarm-long-break.mp3"
+}
